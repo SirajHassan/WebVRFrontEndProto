@@ -1,28 +1,39 @@
-<!-- Siraj Hassan -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Hello!</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  </head>
   <body>
-    <h1>Hi there!</h1>
+    <a-scene background="color: #FAFAFA">
+      <a-assets>
+        <a-asset-item id="gun-obj" src="https://cdn.glitch.com/648c0eae-2439-44bb-8c01-01e91e9f1439%2Fmodel.obj?v=1578401535639"></a-asset-item>
+        <a-asset-item id="gun-mtl" src="https://cdn.glitch.com/648c0eae-2439-44bb-8c01-01e91e9f1439%2Fmaterials.mtl?v=1578401546411"></a-asset-item>
+      </a-assets>
     
-    <p>
-      I'm your cool new wege. Made with Siraj  <a href="https://glitch.com">Glitch</a>!
-    </p>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-entity
+        laser-controls="hand: right; model: false;"
+        raycaster="objects: .click, [block]; direction: 0 -0.8660254037844387 -0.4999999999999998; origin: 0 0 -0.04"
+      >
+        <a-entity
+          obj-model="obj: #gun-obj; mtl: #gun-mtl"
+          rotation="60 180 0"
+          scale="0.3 0.3 0.3"
+        ></a-entity>
+      </a-entity>
+    </a-scene>
+    <div style="position: fixed; left: 0; bottom: 0; padding: 1rem;">
+      Model: <a
+        href="https://poly.google.com/view/4sl07qCR4MB"
+        target="_blank"
+        rel="nofollow noopener"
+      >Capacitor Rifle - Poly</a>
+    </div>
   </body>
 </html>
