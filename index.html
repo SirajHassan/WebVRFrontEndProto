@@ -1,57 +1,27 @@
-<<<<<<< HEAD
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>MDN Games: A-Frame demo</title>
-  <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@710dfc0ab24c9bd86ff54f5a7e6f9b1f64920fa2/dist/aframe-master.min.js"></script>
-</head>
-<body>
-	<a-scene>
-    <a-sky color="#DDDDDD"></a-sky>
-    <a-box>
-      color="#32D9F0"
-      position="0 1 0"    <!{left/right, up/down, forward/back}>
-      rotation="20 40 0"
-    </a-box>
-    <a-camera>
-      position="0 1 -4"    
-      cursor-visible="true"
-      cursor-scale="2"
-      cursor-color="#0095DD"
-      cursor-opacity="0.5"
-    </a-camera>
-    <a-light
-      type="directional"
-      color="#0095dd"
-      intensity="0.5"
-      position="-1 1 2">
-    </a-light>
-    <a-light
-      type="ambient"
-      color="#0095dd">
-    </a-light>
-  </a-scene>
-</body>
-</html>
-=======
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  </head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
   <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
-    <a-entity
-        laser-controls="hand: right; model: false;"
-        raycaster="objects: .click, [block]; direction: 0 -0.8660254037844387 -0.4999999999999998; origin: 0 0 -0.04"
-              > </a-entity>
+    <h1>Hi there!</h1>
+    
+    <p>
+      I'm your cool new asdfasdfasdfge. Made with <a href="https://glitch.com">Glitch</a>!
+    </p>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
   </body>
 </html>
->>>>>>> 0442cae6ecb1090700e6fa6e483842cc9d8dac52
