@@ -9,42 +9,21 @@
   <body>
     <a-scene background="color: #FAFAFA">
       <a-assets>
-        <a-asset-item id="gun-obj" src="https://cdn.glitch.com/648c0eae-2439-44bb-8c01-01e91e9f1439%2Fmodel.obj?v=1578401535639"></a-asset-item>
-        <a-asset-item id="gun-mtl" src="https://cdn.glitch.com/648c0eae-2439-44bb-8c01-01e91e9f1439%2Fmaterials.mtl?v=1578401546411"></a-asset-item>
         <img id = "my-image" src="https://cdn.glitch.com/4fc9d86e-f1d6-4b33-ba1c-c024992ee686%2Ftest_data.png?v=1589248536153">
       </a-assets>
       
       
-      
-    
-      
 
-      
-      
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
-      <a-image src="#my-image" position="0 2 -2" rotation="0 0 0" width = 3 height = 1></a-image>
+      <a-image src="#my-image" position="0 2 -2" rotation="0 0 0" width = "3" height = "1" ></a-image>
       
       <a-entity
         laser-controls="hand: right; model: false;"
         raycaster="objects: .click, [block]; direction: 0 -0.8660254037844387 -0.4999999999999998; origin: 0 0 -0.04"
       >
-        <a-entity
-          obj-model="obj: #gun-obj; mtl: #gun-mtl"
-          rotation="60 180 0"
-          scale="0.3 0.3 0.3"
-        ></a-entity>
+
       </a-entity>
     </a-scene>
     
-    
-    
-    
-<!--     <div style="position: fixed; left: 0; bottom: 0; padding: 1rem;">
-      Model: <a
-        href="https://poly.google.com/view/4sl07qCR4MB"
-        target="_blank"
-        rel="nofollow noopener"
-      >Capacitor Rifle - Poly</a>
-    </div> -->
   </body>
 </html>
