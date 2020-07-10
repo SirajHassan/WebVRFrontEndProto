@@ -1,3 +1,8 @@
+This Repo is being used to prototype A-frame html templates for WebXR experiences. 
+
+
+
+
 Welcome to Glitch
 =================
 
